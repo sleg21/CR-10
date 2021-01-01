@@ -1,0 +1,110 @@
+Send: M501
+Recv: DIGIPOTS Loading
+Recv: DIGIPOTS Loaded
+Recv: DIGIPOTS Loading
+Recv: DIGIPOTS Loaded
+Recv: echo:V82 stored settings retrieved (658 bytes; crc 14800)
+Recv: echo:  G21    ; Units in mm (mm)
+Recv: echo:  M149 C ; Units in Celsius
+Recv: 
+Recv: echo:; Filament settings: Disabled
+Recv: echo:  M200 S0 D1.75
+Recv: echo:; Steps per unit:
+Recv: echo: M92 X80.00 Y80.00 Z400.00 E2667.19
+Recv: echo:; Maximum feedrates (units/s):
+Recv: echo:  M203 X2500.00 Y2500.00 Z100.00 E25.00
+Recv: echo:; Maximum Acceleration (units/s2):
+Recv: echo:  M201 X500.00 Y500.00 Z100.00 E120.00
+Recv: echo:; Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+Recv: echo:  M204 P600.00 R120.00 T800.00
+Recv: echo:; Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> J<junc_dev>
+Recv: echo:  M205 B20000.00 S0.00 T0.00 J0.07
+Recv: echo:; Home offset:
+Recv: echo:  M206 X0.00 Y0.00 Z0.00
+Recv: echo:; Auto Bed Leveling:
+Recv: echo:  M420 S0 Z0.00
+Recv: echo:  G29 W I0 J0 Z-0.26500
+Recv: echo:  G29 W I1 J0 Z-0.12500
+Recv: echo:  G29 W I2 J0 Z0.03000
+Recv: echo:  G29 W I0 J1 Z-0.15750
+Recv: echo:  G29 W I1 J1 Z0.05250
+Recv: echo:  G29 W I2 J1 Z0.25500
+Recv: echo:  G29 W I0 J2 Z-0.12500
+Recv: echo:  G29 W I1 J2 Z-0.06000
+Recv: echo:  G29 W I2 J2 Z0.05500
+Recv: echo:; Material heatup parameters:
+Recv: echo:  M145 S0 H200 B55 F0
+Recv: echo:  M145 S1 H240 B110 F0
+Recv: echo:; PID settings:
+Recv: echo:  M301 P48.65 I4.75 D124.52
+Recv: echo:  M304 P134.68 I23.06 D524.36
+Recv: echo:; Z-Probe Offset (mm):
+Recv: echo:  M851 X30.30 Y-6.80 Z-2.15
+Recv: echo:; Stepper driver current:
+Recv: echo:  M906 X700 Y700 Z580
+Recv: echo:  M906 T0 E250
+Recv: 
+Recv: echo:; Driver stepping mode:
+Recv: echo:  M569 S1 X Y Z
+Recv: echo:; Linear Advance:
+Recv: echo:  M900 K0.00
+Recv: echo:; Filament load/unload lengths:
+Recv: echo:  M603 L50.00 U100.00
+Recv: ok
+
+Send: M122
+Recv: 		X	Y	Z	E
+Recv: Address		0	0	0	0
+Recv: Enabled		false	false	false	false
+Recv: Set current	700	700	580	250
+Recv: RMS current	673	673	550	244
+Recv: MAX current	949	949	776	344
+Recv: Run current	21/31	21/31	17/31	7/31
+Recv: Hold current	10/31	10/31	8/31	3/31
+Recv: CS actual	10/31	10/31	8/31	3/31
+Recv: PWM scale
+Recv: vsense		1=.18	1=.18	1=.18	1=.18
+Recv: stealthChop	true	true	true	false
+Recv: msteps		16	16	16	16
+Recv: tstep		max	max	max	max
+Recv: PWM thresh.
+Recv: [mm/s]
+Recv: OT prewarn	false	false	false	false
+Recv: pwm scale sum	45	46	55	4
+Recv: pwm scale auto	0	1	2	0
+Recv: pwm offset auto	131	132	191	36
+Recv: pwm grad auto	48	49	54	14
+Recv: off time	3	3	3	3
+Recv: blank time	24	24	24	24
+Recv: hysteresis
+Recv:  -end		-1	-1	-1	-1
+Recv:  -start		1	1	1	1
+Recv: Stallguard thrs	0	0	0	0
+Recv: uStep count	424	184	744	680
+Recv: DRVSTATUS	X	Y	Z	E
+Recv: sg_result	100	44	4	0
+Recv: stst
+Recv: olb
+Recv: ola
+Recv: s2gb
+Recv: s2ga
+Recv: otpw
+Recv: ot
+Recv: 157C
+Recv: 150C
+Recv: 143C
+Recv: 120C
+Recv: s2vsa
+Recv: s2vsb
+Recv: Driver registers:
+Recv: 		X	0xC0:0A:00:00
+Recv: 		Y	0xC0:0A:00:00
+Recv: 		Z	0xC0:08:00:00
+Recv: 		E	0x80:03:00:00
+Recv: 
+Recv: 
+Recv: Testing X connection... OK
+Recv: Testing Y connection... OK
+Recv: Testing Z connection... OK
+Recv: Testing E connection... OK
+Recv: ok

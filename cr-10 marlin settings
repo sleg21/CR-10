@@ -1,0 +1,131 @@
+Send: M122
+Recv: 		X	Y	Z	E
+Recv: Enabled		false	false	false	false
+Recv: Set current	800	800	600	400
+Recv: RMS current	795	795	581	397
+Recv: MAX current	1121	1121	819	560
+Recv: Run current	25/31	25/31	18/31	12/31
+Recv: Hold current	12/31	12/31	9/31	6/31
+Recv: CS actual		12/31	12/31	9/31	6/31
+Recv: PWM scale	0	0	2	0
+Recv: vsense		1=.18	1=.18	1=.18	1=.18
+Recv: stealthChop	true	true	true	true
+Recv: msteps		16	16	16	4
+Recv: tstep		max	max	max	max
+Recv: pwm
+Recv: threshold		0	0	0	0
+Recv: [mm/s]		-	-	-	-
+Recv: OT prewarn	false	false	false	false
+Recv: OT prewarn has
+Recv: been triggered	false	false	false	false
+Recv: off time		3	3	3	3
+Recv: blank time	24	24	24	24
+Recv: hysteresis
+Recv: -end		-1	-1	-1	-1
+Recv: -start		1	1	1	1
+Recv: Stallguard thrs	0	0	0	0
+Recv: DRVSTATUS	X	Y	Z	E
+Recv: stallguard
+Recv: sg_result		0	0	0	0
+Recv: fsactive
+Recv: stst		X	X	X	X
+Recv: olb
+Recv: ola
+Recv: s2gb
+Recv: s2ga
+Recv: otpw
+Recv: ot
+Recv: Driver registers:
+Recv: 		X	0x80:0C:00:00
+Recv: 		Y	0x80:0C:00:00
+Recv: 		Z	0x80:09:00:00
+Recv: 		E	0x80:06:00:00
+Recv: 
+Recv: 
+Recv: Testing X connection... OK
+Recv: Testing Y connection... OK
+Recv: Testing Z connection... OK
+Recv: Testing E connection... OK
+Recv: ok
+
+
+Send: M503
+Recv:   G21    ; Units in mm (mm)
+Recv:   M149 C ; Units in Celsius
+Recv: 
+Recv:   M200 D1.75
+Recv:   M200 D0
+Recv:   M92 X80.00 Y80.00 Z400.00 E661.59
+Recv:   M203 X500.00 Y500.00 Z20.00 E25.00
+Recv:   M201 X500.00 Y500.00 Z100.00 E120.00
+Recv:   M204 P500.00 R120.00 T500.00
+Recv:   M205 B20000.00 S0.00 T0.00 X8.00 Y8.00 Z0.30 E0.60
+Recv:   M206 X0.00 Y0.00 Z0.00
+Recv:   M420 S0 Z0.00
+Recv:   G29 W I0 J0 Z-0.11500
+Recv:   G29 W I1 J0 Z-0.07250
+Recv:   G29 W I2 J0 Z-0.18000
+Recv:   G29 W I0 J1 Z-0.08750
+Recv:   G29 W I1 J1 Z0.03000
+Recv:   G29 W I2 J1 Z0.04000
+Recv:   G29 W I0 J2 Z0.07250
+Recv:   G29 W I1 J2 Z0.06250
+Recv:   G29 W I2 J2 Z-0.09000
+Recv:   M145 S0 H180 B70 F0
+Recv:   M145 S1 H240 B110 F0
+Recv:   M301 P32.06 I3.16 D81.41
+Recv:   M851 Z-3.11
+Recv:   M906 X800 Y800 Z600
+Recv:   M906 T0 E400
+Recv: 
+Recv:   M569 S1 X Y Z
+Recv:   M569 S1 T0 E
+Recv: ok
+
+
+Send: M501
+Recv: echo:V66 stored settings retrieved (593 bytes; crc 9732)
+Recv: echo:  G21    ; Units in mm (mm)
+Recv: echo:  M149 C ; Units in Celsius
+Recv: 
+Recv: echo:Filament settings: Disabled
+Recv: echo:  M200 D1.75
+Recv: echo:  M200 D0
+Recv: echo:Steps per unit:
+Recv: echo: M92 X80.00 Y80.00 Z400.00 E661.59
+Recv: echo:Maximum feedrates (units/s):
+Recv: echo:  M203 X500.00 Y500.00 Z20.00 E25.00
+Recv: echo:Maximum Acceleration (units/s2):
+Recv: echo:  M201 X500.00 Y500.00 Z100.00 E120.00
+Recv: echo:Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+Recv: echo:  M204 P500.00 R120.00 T500.00
+Recv: echo:Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> X<max_x_jerk> Y<max_y_jerk> Z<max_z_jerk> E<max_e_jerk>
+Recv: echo:  M205 B20000.00 S0.00 T0.00 X8.00 Y8.00 Z0.30 E0.60
+Recv: echo:Home offset:
+Recv: echo:  M206 X0.00 Y0.00 Z0.00
+Recv: echo:Auto Bed Leveling:
+Recv: echo:  M420 S0 Z0.00
+Recv: echo:  G29 W I0 J0 Z-0.11500
+Recv: echo:  G29 W I1 J0 Z-0.07250
+Recv: echo:  G29 W I2 J0 Z-0.18000
+Recv: echo:  G29 W I0 J1 Z-0.08750
+Recv: echo:  G29 W I1 J1 Z0.03000
+Recv: echo:  G29 W I2 J1 Z0.04000
+Recv: echo:  G29 W I0 J2 Z0.07250
+Recv: echo:  G29 W I1 J2 Z0.06250
+Recv: echo:  G29 W I2 J2 Z-0.09000
+Recv: echo:Material heatup parameters:
+Recv: echo:  M145 S0 H180 B70 F0
+Recv: echo:  M145 S1 H240 B110 F0
+Recv: echo:PID settings:
+Recv: echo:  M301 P32.06 I3.16 D81.41
+Recv: echo:Z-Probe Offset (mm):
+Recv: echo:  M851 Z-3.11
+Recv: echo:Stepper driver current:
+Recv: echo:  M906 X800 Y800 Z600
+Recv: echo:  M906 T0 E400
+Recv: 
+Recv: echo:Driver stepping mode:
+Recv: echo:  M569 S1 X Y Z
+Recv:   M569 S1 T0 E
+Recv: ok
