@@ -494,9 +494,9 @@
     #define DEFAULT_Ki_LIST {   1.72,   1.72 }
     #define DEFAULT_Kd_LIST {  73.96,  73.96 }
   #else
-    #define DEFAULT_Kp  22.57
-    #define DEFAULT_Ki   1.72
-    #define DEFAULT_Kd  73.96
+    #define DEFAULT_Kp  24.93
+    #define DEFAULT_Ki   2.15
+    #define DEFAULT_Kd  72.31
   #endif
 #endif // PIDTEMP
 
@@ -534,9 +534,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // Stock CR-10 Bed Tuned for 70C
-  #define DEFAULT_bedKp 426.68
-  #define DEFAULT_bedKi 78.92
-  #define DEFAULT_bedKd 576.71
+  #define DEFAULT_bedKp 134.68
+  #define DEFAULT_bedKi 23.06
+  #define DEFAULT_bedKd 524.36
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -735,7 +735,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 2700 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 2667.19 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -980,11 +980,11 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 30.3, -6.8, -3.11 }
+#define NOZZLE_TO_PROBE_OFFSET { 30.3, -6.8, -2.15 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 22
+#define PROBING_MARGIN 25
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_SPEED (133*60)
